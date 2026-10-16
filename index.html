@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plan CP·MKT</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header>
+  <div class="hrow">
+    <div class="brand">Plan CP·MKT</div>
+    <span id="mode" class="mode"></span>
+    <div class="ctrl">
+      <div class="pill">
+        <button data-act="day" data-d="-1" title="Ngày trước">‹</button>
+        <input type="date" id="dateInp">
+        <button data-act="day" data-d="1" title="Ngày sau">›</button>
+        <button data-act="today">Hôm nay</button>
+      </div>
+      <div class="pill" id="caPill">
+        <button data-act="ca" data-v="Sáng">☀️ Ca sáng</button>
+        <button data-act="ca" data-v="Tối">🌙 Ca tối</button>
+      </div>
+    </div>
+  </div>
+  <nav id="tabs">
+    <button data-tab="cay">🌳 Cây tổng thể</button>
+    <button data-tab="toi">👤 Việc của tôi</button>
+    <button data-tab="tiendo">📊 Tiến độ</button>
+    <button data-tab="caidat">⚙️ Cài đặt</button>
+  </nav>
+</header>
+<main id="app"><div class="empty">Đang kết nối Lark Base…</div></main>
+<div id="menu"></div>
+<div id="modal" class="modal hidden"><div class="sheet" id="sheet"></div></div>
+<div id="toast"></div>
+<!-- Classic script, chung phạm vi toàn cục, đúng thứ tự cũ. main.js (module) chạy sau cùng. -->
+<script src="js/app/util.js"></script>
+<script src="js/app/api.js"></script>
+<script src="js/app/state.js"></script>
+<script src="js/app/render.js"></script>
+<script src="js/app/cay.js"></script>
+<script src="js/app/toi.js"></script>
+<script src="js/app/tiendo.js"></script>
+<script src="js/app/caidat.js"></script>
+<script src="js/app/widgets.js"></script>
+<script src="js/app/modals.js"></script>
+<script src="js/app/events.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

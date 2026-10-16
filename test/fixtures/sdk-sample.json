@@ -1,0 +1,1535 @@
+{
+ "chude": {
+  "fields": [
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Nhóm",
+    "fieldType": 3,
+    "optionCount": 7
+   },
+   {
+    "name": "Ghi chú",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Kênh cần",
+    "fieldType": 4,
+    "optionCount": 7
+   },
+   {
+    "name": "Ca",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 5
+   },
+   {
+    "name": "Thứ tự",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Tên người (gốc)",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Người",
+    "fieldType": 11,
+    "optionCount": null
+   },
+   {
+    "name": "Chủ đề",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Ngày",
+    "fieldType": 5,
+    "optionCount": null
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28Ncja64LQp",
+    "fields": {
+     "Nhóm": null,
+     "Ghi chú": null,
+     "Thứ tự": 8,
+     "Ngày": 1791910800000,
+     "Ca": {
+      "id": "opt156639939",
+      "text": "Tối"
+     },
+     "Mảng": {
+      "id": "opt26234615",
+      "text": "Nô Tì"
+     },
+     "Kênh cần": [
+      {
+       "id": "opt2069171233",
+       "text": "App Deal hot"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-14T21:50:21"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "An"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Share link tích điểm"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "cdmv888d6krprir"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncja66rkm",
+    "fields": {
+     "Ghi chú": null,
+     "Thứ tự": 14,
+     "Tên người (gốc)": null,
+     "Ngày": 1791910800000,
+     "Nhóm": {
+      "id": "opt2087502791",
+      "text": "Fanpage"
+     },
+     "Ca": {
+      "id": "opt156639939",
+      "text": "Tối"
+     },
+     "Mảng": {
+      "id": "opt790943626",
+      "text": "Social"
+     },
+     "Người": null,
+     "Kênh cần": [
+      {
+       "id": "opt1104091243",
+       "text": "Fanpage Nô Tì"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-14T21:50:21"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Fanpage Nô Tì"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "cdmv888d6kkjr6n"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncja63Pzi",
+    "fields": {
+     "Ghi chú": null,
+     "Thứ tự": 24,
+     "Ngày": 1791997200000,
+     "Nhóm": {
+      "id": "opt1951384512",
+      "text": "Threads"
+     },
+     "Ca": {
+      "id": "opt553476176",
+      "text": "Sáng"
+     },
+     "Mảng": {
+      "id": "opt790943626",
+      "text": "Social"
+     },
+     "Người": null,
+     "Kênh cần": [
+      {
+       "id": "opt1951384512",
+       "text": "Threads"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T11:37:43"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "Nam"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Threads Nô Tì"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "cdmv91sdc03jtmy"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "viec": {
+  "fields": [
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 5
+   },
+   {
+    "name": "Ghi chú",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Dời sang ca",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "Người",
+    "fieldType": 11,
+    "optionCount": null
+   },
+   {
+    "name": "goc",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Dạng bài",
+    "fieldType": 4,
+    "optionCount": 7
+   },
+   {
+    "name": "Ngày",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Lý do trì hoãn",
+    "fieldType": 3,
+    "optionCount": 6
+   },
+   {
+    "name": "Dời sang ngày",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "Số bài dự kiến",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Quá giờ",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Bài đăng",
+    "fieldType": 21,
+    "optionCount": null
+   },
+   {
+    "name": "Việc",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Kênh",
+    "fieldType": 4,
+    "optionCount": 10
+   },
+   {
+    "name": "Gợi ý số bài",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Chủ đề",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Nhóm",
+    "fieldType": 3,
+    "optionCount": 8
+   },
+   {
+    "name": "Bắt đầu lúc",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Giờ kết thúc",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Giờ bắt đầu",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Cả ca",
+    "fieldType": 7,
+    "optionCount": null
+   },
+   {
+    "name": "Số bài đã đăng",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "chuDeId",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Hạn chót",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Thứ tự",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Ca",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "Tên người (gốc)",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Cập nhật lúc",
+    "fieldType": 1002,
+    "optionCount": null
+   },
+   {
+    "name": "Trạng thái",
+    "fieldType": 3,
+    "optionCount": 4
+   },
+   {
+    "name": "Việc gấp",
+    "fieldType": 7,
+    "optionCount": null
+   },
+   {
+    "name": "nhomViec",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Lịch sử",
+    "fieldType": 1,
+    "optionCount": null
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28NbdWhRGfq",
+    "fields": {
+     "Ghi chú": null,
+     "Dời sang ca": null,
+     "goc": null,
+     "Ngày": 1791910800000,
+     "Lý do trì hoãn": null,
+     "Dời sang ngày": null,
+     "Số bài dự kiến": null,
+     "Quá giờ": [
+      {
+       "text": "true",
+       "type": "text"
+      }
+     ],
+     "Bài đăng": null,
+     "Gợi ý số bài": 1,
+     "Nhóm": null,
+     "Bắt đầu lúc": "2026/10/14",
+     "Cả ca": false,
+     "Số bài đã đăng": 0,
+     "Hạn chót": "2026/10/14",
+     "Thứ tự": 0,
+     "Cập nhật lúc": 1792116594000,
+     "Việc gấp": false,
+     "Lịch sử": null,
+     "Mảng": {
+      "id": "optYlJOTMY",
+      "text": "TikTok"
+     },
+     "Ca": {
+      "id": "opt4UkvVVq",
+      "text": "Sáng"
+     },
+     "Trạng thái": {
+      "id": "opt8ij7t16",
+      "text": "Chưa làm"
+     },
+     "Dạng bài": [
+      {
+       "id": "optGf2rFmP",
+       "text": "Mẹo săn sale"
+      }
+     ],
+     "Kênh": [
+      {
+       "id": "optIxdMCqN",
+       "text": "App Deal hot"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "vmv7qqausjjpsf"
+      }
+     ],
+     "Việc": [
+      {
+       "type": "text",
+       "text": "Post hướng dẫn mở hộp quà"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Mã 26%, 22% khi mở hộp quà"
+      }
+     ],
+     "Giờ kết thúc": [
+      {
+       "type": "text",
+       "text": "15:30"
+      }
+     ],
+     "Giờ bắt đầu": [
+      {
+       "type": "text",
+       "text": "15:00"
+      }
+     ],
+     "chuDeId": [
+      {
+       "type": "text",
+       "text": "cdmv7qqaushfvlr"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-14T13:40:24"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "Giang"
+      }
+     ],
+     "nhomViec": [
+      {
+       "type": "text",
+       "text": "gmv7qqausz6tgn"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28NbfUaZRrC",
+    "fields": {
+     "Ghi chú": null,
+     "Dời sang ca": null,
+     "goc": null,
+     "Ngày": 1791910800000,
+     "Lý do trì hoãn": null,
+     "Dời sang ngày": null,
+     "Số bài dự kiến": 2,
+     "Quá giờ": [
+      {
+       "text": "true",
+       "type": "text"
+      }
+     ],
+     "Bài đăng": null,
+     "Gợi ý số bài": null,
+     "Bắt đầu lúc": "2026/10/14",
+     "Giờ kết thúc": null,
+     "Giờ bắt đầu": null,
+     "Cả ca": true,
+     "Số bài đã đăng": 0,
+     "Hạn chót": "2026/10/15",
+     "Thứ tự": 0,
+     "Tên người (gốc)": null,
+     "Cập nhật lúc": 1792116594000,
+     "Việc gấp": false,
+     "Lịch sử": null,
+     "Mảng": {
+      "id": "optvs4z3sY",
+      "text": "Social"
+     },
+     "Người": null,
+     "Nhóm": {
+      "id": "optXRpYQWx",
+      "text": "Threads"
+     },
+     "Ca": {
+      "id": "optGnlDtYS",
+      "text": "Tối"
+     },
+     "Trạng thái": {
+      "id": "opt8ij7t16",
+      "text": "Chưa làm"
+     },
+     "Dạng bài": [
+      {
+       "id": "optGMpOrmZ",
+       "text": "Bán sản phẩm"
+      }
+     ],
+     "Kênh": [
+      {
+       "id": "optDA2jRim",
+       "text": "Threads"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "vmv888d6kfsfeo"
+      }
+     ],
+     "Việc": [
+      {
+       "type": "text",
+       "text": "Đăng thread deal hot"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Threads Nô Tì"
+      }
+     ],
+     "chuDeId": [
+      {
+       "type": "text",
+       "text": "cdmv888d6kluuyj"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-14T21:50:21"
+      }
+     ],
+     "nhomViec": [
+      {
+       "type": "text",
+       "text": "gmv888d6kxv36e"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28NbhXOGu1x",
+    "fields": {
+     "Ghi chú": null,
+     "Dời sang ca": null,
+     "goc": null,
+     "Ngày": 1791997200000,
+     "Lý do trì hoãn": null,
+     "Dời sang ngày": null,
+     "Số bài dự kiến": 2,
+     "Quá giờ": [
+      {
+       "text": "true",
+       "type": "text"
+      }
+     ],
+     "Bài đăng": null,
+     "Gợi ý số bài": null,
+     "Bắt đầu lúc": "2026/10/15",
+     "Cả ca": false,
+     "Số bài đã đăng": 0,
+     "Hạn chót": "2026/10/15",
+     "Thứ tự": 1,
+     "Cập nhật lúc": 1792116594000,
+     "Việc gấp": false,
+     "Lịch sử": null,
+     "Mảng": {
+      "id": "optPjtg7K4",
+      "text": "Shopee"
+     },
+     "Nhóm": {
+      "id": "opthdLbwG9",
+      "text": "Hằng ngày"
+     },
+     "Ca": {
+      "id": "opt4UkvVVq",
+      "text": "Sáng"
+     },
+     "Trạng thái": {
+      "id": "opt8ij7t16",
+      "text": "Chưa làm"
+     },
+     "Dạng bài": [
+      {
+       "id": "optJV3FXXN",
+       "text": "Mã/CTKM"
+      }
+     ],
+     "Kênh": [
+      {
+       "id": "optIxdMCqN",
+       "text": "App Deal hot"
+      },
+      {
+       "id": "optVme5wq2",
+       "text": "Group Xóm Săn Sale"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "vmv8z6eou5oo0j"
+      }
+     ],
+     "Việc": [
+      {
+       "type": "text",
+       "text": "Post nhắc mã khung 15H"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Mã 50% IG, 30% FB back 9H, 15H"
+      }
+     ],
+     "Giờ kết thúc": [
+      {
+       "type": "text",
+       "text": "15:05"
+      }
+     ],
+     "Giờ bắt đầu": [
+      {
+       "type": "text",
+       "text": "14:45"
+      }
+     ],
+     "chuDeId": [
+      {
+       "type": "text",
+       "text": "cdmv8z6eou9n688"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:24:38"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "Giang"
+      }
+     ],
+     "nhomViec": [
+      {
+       "type": "text",
+       "text": "gmv8z6eou9suxo"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "bai": {
+  "fields": [
+   {
+    "name": "stt",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Idea",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Thời điểm đăng",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "Không có link",
+    "fieldType": 7,
+    "optionCount": null
+   },
+   {
+    "name": "Ngày",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "viecId",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 1
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Mảng việc",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Việc",
+    "fieldType": 21,
+    "optionCount": null
+   },
+   {
+    "name": "Tên người (gốc)",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Tỷ lệ tương tác",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Bình luận",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Chủ đề",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Link",
+    "fieldType": 15,
+    "optionCount": null
+   },
+   {
+    "name": "Thích",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Dạng bài",
+    "fieldType": 3,
+    "optionCount": 7
+   },
+   {
+    "name": "Ca",
+    "fieldType": 3,
+    "optionCount": 1
+   },
+   {
+    "name": "Thời điểm điền số liệu",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "Người đăng",
+    "fieldType": 11,
+    "optionCount": null
+   },
+   {
+    "name": "Ngày việc",
+    "fieldType": 20,
+    "optionCount": null
+   },
+   {
+    "name": "Kênh",
+    "fieldType": 3,
+    "optionCount": 10
+   },
+   {
+    "name": "Tiếp cận",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Ca việc",
+    "fieldType": 20,
+    "optionCount": null
+   }
+  ],
+  "records": []
+ },
+ "bangiao": {
+  "fields": [
+   {
+    "name": "Ghi chú",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Người ghi",
+    "fieldType": 1003,
+    "optionCount": null
+   },
+   {
+    "name": "Ghi lúc",
+    "fieldType": 1001,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Ngày",
+    "fieldType": 5,
+    "optionCount": null
+   },
+   {
+    "name": "Ca",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 5
+   }
+  ],
+  "records": []
+ },
+ "thuvien": {
+  "fields": [
+   {
+    "name": "Dạng bài",
+    "fieldType": 4,
+    "optionCount": 0
+   },
+   {
+    "name": "Số lượng",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Giờ bắt đầu",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Giờ kết thúc",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Nhóm",
+    "fieldType": 3,
+    "optionCount": 1
+   },
+   {
+    "name": "Kênh",
+    "fieldType": 4,
+    "optionCount": 0
+   },
+   {
+    "name": "Loại",
+    "fieldType": 3,
+    "optionCount": 1
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Cả ca",
+    "fieldType": 7,
+    "optionCount": null
+   },
+   {
+    "name": "Chủ đề",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "Tên",
+    "fieldType": 1,
+    "optionCount": null
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28Ncji1nQt9",
+    "fields": {
+     "Dạng bài": null,
+     "Số lượng": null,
+     "Giờ bắt đầu": null,
+     "Giờ kết thúc": null,
+     "Kênh": null,
+     "Cả ca": false,
+     "Chủ đề": null,
+     "Nhóm": {
+      "id": "opt1878620904",
+      "text": "Thứ 4 Siêu Rẻ"
+     },
+     "Loại": {
+      "id": "opt10929368",
+      "text": "chude"
+     },
+     "Mảng": {
+      "id": "opt797043937",
+      "text": "Shopee"
+     },
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T09:12:08"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "tvmv8wl5tavordw"
+      }
+     ],
+     "Tên": [
+      {
+       "type": "text",
+       "text": "ssss"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncji1q5TW",
+    "fields": {
+     "Dạng bài": null,
+     "Số lượng": null,
+     "Giờ bắt đầu": null,
+     "Giờ kết thúc": null,
+     "Nhóm": null,
+     "Kênh": null,
+     "Cả ca": false,
+     "Chủ đề": null,
+     "Loại": {
+      "id": "opt10929368",
+      "text": "chude"
+     },
+     "Mảng": {
+      "id": "opt1003599390",
+      "text": "Lazada"
+     },
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T09:12:16"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "tvmv8wlckokjmt5"
+      }
+     ],
+     "Tên": [
+      {
+       "type": "text",
+       "text": "sss"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "mau": {
+  "fields": [
+   {
+    "name": "Chủ đề",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 3,
+    "optionCount": 5
+   },
+   {
+    "name": "Danh sách việc (JSON)",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Ghi chú",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Thứ tự",
+    "fieldType": 2,
+    "optionCount": null
+   },
+   {
+    "name": "Khối",
+    "fieldType": 3,
+    "optionCount": 11
+   },
+   {
+    "name": "Kênh cần",
+    "fieldType": 4,
+    "optionCount": 7
+   },
+   {
+    "name": "id",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Nhóm",
+    "fieldType": 3,
+    "optionCount": 8
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28Ncjkt5O5B",
+    "fields": {
+     "Ghi chú": null,
+     "Thứ tự": 12,
+     "Nhóm": null,
+     "Mảng": {
+      "id": "opt1003599390",
+      "text": "Lazada"
+     },
+     "Khối": {
+      "id": "opt215914254",
+      "text": "Lazada hằng ngày"
+     },
+     "Kênh cần": [
+      {
+       "id": "opt2069171233",
+       "text": "App Deal hot"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Trang độc quyền Nô Tì – deal trợ giá 30% back 11H"
+      }
+     ],
+     "Danh sách việc (JSON)": [
+      {
+       "type": "text",
+       "text": "[{\"viec\":\"Post nhắc deal trợ giá 11H\",\"caCa\":\"\",\"batDau\":\"10:45\",\"ketThuc\":\"11:05\",\"kenh\":\"App Deal hot\",\"dangBai\":\"Bán sản phẩm\",\"soLuong\":\"1\"}]"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "mau11"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncjkt1h9j",
+    "fields": {
+     "Ghi chú": null,
+     "Thứ tự": 19,
+     "Nhóm": null,
+     "Mảng": {
+      "id": "opt26234615",
+      "text": "Nô Tì"
+     },
+     "Khối": {
+      "id": "opt1025160359",
+      "text": "Nô Tì hằng ngày"
+     },
+     "Kênh cần": [
+      {
+       "id": "opt2069171233",
+       "text": "App Deal hot"
+      }
+     ],
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Share link tích điểm"
+      }
+     ],
+     "Danh sách việc (JSON)": [
+      {
+       "type": "text",
+       "text": "[{\"viec\":\"Nhắc mem tích điểm trước khi đặt hàng\",\"caCa\":\"1\",\"batDau\":\"\",\"ketThuc\":\"\",\"kenh\":\"App Deal hot\",\"dangBai\":\"Truyền thông app\",\"soLuong\":\"1\"}]"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "mau18"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncjkt2kD7",
+    "fields": {
+     "Ghi chú": null,
+     "Thứ tự": 21,
+     "Kênh cần": null,
+     "Nhóm": null,
+     "Mảng": {
+      "id": "opt26234615",
+      "text": "Nô Tì"
+     },
+     "Khối": {
+      "id": "opt1025160359",
+      "text": "Nô Tì hằng ngày"
+     },
+     "Chủ đề": [
+      {
+       "type": "text",
+       "text": "Kiểm tra banner"
+      }
+     ],
+     "Danh sách việc (JSON)": [
+      {
+       "type": "text",
+       "text": "[{\"viec\":\"Gỡ banner cũ, cập nhật banner mới\",\"caCa\":\"\",\"batDau\":\"08:00\",\"ketThuc\":\"08:30\",\"kenh\":\"\",\"dangBai\":\"\",\"soLuong\":\"0\"}]"
+      }
+     ],
+     "id": [
+      {
+       "type": "text",
+       "text": "mau20"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "macdinh": {
+  "fields": [
+   {
+    "name": "Người",
+    "fieldType": 11,
+    "optionCount": null
+   },
+   {
+    "name": "Tên người (gốc)",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "capNhat",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Ca | Mảng",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Ca",
+    "fieldType": 3,
+    "optionCount": 2
+   },
+   {
+    "name": "Mảng",
+    "fieldType": 4,
+    "optionCount": 5
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28NbZuwLNtJ",
+    "fields": {
+     "Ca": {
+      "id": "opthkxCyfg",
+      "text": "Sáng"
+     },
+     "Mảng": [
+      {
+       "id": "optqaekdjO",
+       "text": "Nô Tì"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "Dũng, Khoa"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ],
+     "Ca | Mảng": [
+      {
+       "type": "text",
+       "text": "Sáng|Nô Tì"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      },
+      {
+       "id": "ou_sample1"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28NbZxBG68J",
+    "fields": {
+     "Người": null,
+     "Ca": {
+      "id": "optwczD2sS",
+      "text": "Tối"
+     },
+     "Mảng": [
+      {
+       "id": "optaVkrWnC",
+       "text": "Shopee"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "Hoa"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ],
+     "Ca | Mảng": [
+      {
+       "type": "text",
+       "text": "Tối|Shopee"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Nba0qHin1",
+    "fields": {
+     "Ca": {
+      "id": "optwczD2sS",
+      "text": "Tối"
+     },
+     "Mảng": [
+      {
+       "id": "optqaekdjO",
+       "text": "Nô Tì"
+      }
+     ],
+     "Tên người (gốc)": [
+      {
+       "type": "text",
+       "text": "An"
+      }
+     ],
+     "capNhat": [
+      {
+       "type": "text",
+       "text": "2026-10-15T10:22:46"
+      }
+     ],
+     "Ca | Mảng": [
+      {
+       "type": "text",
+       "text": "Tối|Nô Tì"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "nhansu": {
+  "fields": [
+   {
+    "name": "Tên",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Người",
+    "fieldType": 11,
+    "optionCount": null
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28Ncjq5Dl0W",
+    "fields": {
+     "Tên": [
+      {
+       "type": "text",
+       "text": "Khoa"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncjq5CZ6k",
+    "fields": {
+     "Người": null,
+     "Tên": [
+      {
+       "type": "text",
+       "text": "Nam"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28Ncjq5Dx4M",
+    "fields": {
+     "Tên": [
+      {
+       "type": "text",
+       "text": "An"
+      }
+     ],
+     "Người": [
+      {
+       "id": "ou_sample0"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "danhmuc": {
+  "fields": [
+   {
+    "name": "Kênh",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Dạng bài",
+    "fieldType": 1,
+    "optionCount": null
+   },
+   {
+    "name": "Lý do",
+    "fieldType": 1,
+    "optionCount": null
+   }
+  ],
+  "records": [
+   {
+    "recordId": "reczz28NcjsXxy6s",
+    "fields": {
+     "Kênh": [
+      {
+       "type": "text",
+       "text": "App Cộng đồng"
+      }
+     ],
+     "Dạng bài": [
+      {
+       "type": "text",
+       "text": "Bán sản phẩm"
+      }
+     ],
+     "Lý do": [
+      {
+       "type": "text",
+       "text": "Chờ mã lên"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28NcjsXvFvn",
+    "fields": {
+     "Kênh": [
+      {
+       "type": "text",
+       "text": "Fanpage Xóm Săn Sale"
+      }
+     ],
+     "Dạng bài": [
+      {
+       "type": "text",
+       "text": "Tương tác/giải trí"
+      }
+     ],
+     "Lý do": [
+      {
+       "type": "text",
+       "text": "Thiếu thông tin"
+      }
+     ]
+    }
+   },
+   {
+    "recordId": "reczz28NcjsXxNOD",
+    "fields": {
+     "Kênh": [
+      {
+       "type": "text",
+       "text": "Fanpage Hội Săn Deal"
+      }
+     ],
+     "Dạng bài": [
+      {
+       "type": "text",
+       "text": "Truyền thông app"
+      }
+     ],
+     "Lý do": [
+      {
+       "type": "text",
+       "text": "Khác"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Thăm dò SDK</title>
+<style>body { font: 13px/1.4 system-ui, sans-serif; margin: 12px; } pre { white-space: pre-wrap; }</style>
+</head>
+<body>
+<b>Thăm dò SDK Lark — chỉ chạy trên Base test</b>
+<pre id="out">Đang chạy…</pre>
+<script type="module">
+import { FIELD_TYPE, SDK_URL, TABLES } from '../js/config.js';
+
+const VN_OFFSET_MS = 7 * 60 * 60 * 1000;
+const out = document.getElementById('out');
+const report = { startedAt: new Date().toISOString(), steps: [] };
+
+async function step(name, fn) {
+  try {
+    report.steps.push({ name, ok: true, result: await fn() });
+  } catch (error) {
+    console.error('Probe step failed', name, error);
+    report.steps.push({ name, ok: false, error: String(error?.message || error) });
+  }
+}
+
+const { bitable } = await import(SDK_URL);
+const tableOf = (type) => bitable.base.getTableByName(TABLES[type].name);
+const metaByName = async (table) => Object.fromEntries((await table.getFieldMetaList()).map((meta) => [meta.name, meta]));
+const textCell = (text) => [{ type: 'text', text }];
+const idFilter = (fieldId, value) => ({
+  conjunction: 'and',
+  conditions: [{ fieldId, operator: 'is', value, fieldType: FIELD_TYPE.TEXT }],
+});
+
+async function readAll(table) {
+  const records = [];
+  let pageToken;
+  do {
+    const page = await table.getRecordsByPage({ pageSize: 200, ...(pageToken ? { pageToken } : {}) });
+    records.push(...page.records);
+    pageToken = page.hasMore ? page.pageToken : undefined;
+  } while (pageToken);
+  return records;
+}
+
+await step('tables', async () => (await bitable.base.getTableMetaList()).map((table) => table.name));
+
+await step('samples', async () => {
+  const result = {};
+  for (const type of Object.keys(TABLES)) {
+    const table = await tableOf(type);
+    const metas = await table.getFieldMetaList();
+    const nameById = Object.fromEntries(metas.map((meta) => [meta.id, meta.name]));
+    const page = await table.getRecordsByPage({ pageSize: 3 });
+    result[type] = {
+      fields: metas.map((meta) => ({ name: meta.name, fieldType: meta.type, optionCount: meta.property?.options?.length ?? null })),
+      records: page.records.map((record) => ({
+        recordId: record.recordId,
+        fields: Object.fromEntries(Object.entries(record.fields).map(([fieldId, value]) => [nameById[fieldId], value])),
+      })),
+    };
+  }
+  return result;
+});
+
+await step('identity', async () => {
+  const userId = await bitable.bridge.getUserId();
+  const baseUserId = await bitable.bridge.getBaseUserId();
+  const table = await tableOf('nhansu');
+  const meta = await metaByName(table);
+  const people = (await readAll(table)).map((record) => ({
+    ten: record.fields[meta['Tên'].id],
+    users: record.fields[meta['Người'].id] ?? [],
+  }));
+  return {
+    userId,
+    baseUserId,
+    matchedByUserId: people.filter((p) => p.users.some((u) => u.id === userId)).length,
+    matchedByBaseUserId: people.filter((p) => p.users.some((u) => u.id === baseUserId)).length,
+    firstPeople: people.slice(0, 2),
+  };
+});
+
+await step('canEdit', () => bitable.base.getPermission({ entity: 'Base', type: 'editable' }));
+
+await step('dateFilter', async () => {
+  const table = await tableOf('viec');
+  const meta = await metaByName(table);
+  const all = await readAll(table);
+  const dayMs = all.find((record) => record.fields[meta['Ngày'].id])?.fields[meta['Ngày'].id];
+  const expected = all.filter((record) => record.fields[meta['Ngày'].id] === dayMs).length;
+  const filtered = await table.getRecordsByPage({
+    pageSize: 200,
+    filter: { conjunction: 'or', conditions: [{ fieldId: meta['Ngày'].id, operator: 'is', value: dayMs, fieldType: FIELD_TYPE.DATE_TIME }] },
+  });
+  return { dayMs, dayVn: new Date(dayMs + VN_OFFSET_MS).toISOString(), expected, got: filtered.records.length };
+});
+
+await step('writeBanGiao', async () => {
+  const table = await tableOf('bangiao');
+  const meta = await metaByName(table);
+  const caOption = meta['Ca'].property.options[0];
+  const readBack = async () => (await table.getRecordsByPage({ pageSize: 5, filter: idFilter(meta['id'].id, 'probe1') }))
+    .records.map((record) => record.fields);
+  const [recordId] = await table.addRecords([{ fields: {
+    [meta['id'].id]: textCell('probe1'),
+    [meta['Ghi chú'].id]: textCell('PROBE – xoá được'),
+    [meta['Ngày'].id]: Date.UTC(2026, 0, 1) - VN_OFFSET_MS,
+    [meta['Ca'].id]: { id: caOption.id, text: caOption.name },
+  } }]);
+  const afterAdd = await readBack();
+  await table.setRecords([{ recordId, fields: { [meta['Ghi chú'].id]: null, [meta['Ca'].id]: null } }]);
+  const afterNull = await readBack();
+  let plainString;
+  try {
+    await table.setRecords([{ recordId, fields: { [meta['Ghi chú'].id]: 'chuỗi trơn' } }]);
+    plainString = await readBack();
+  } catch (error) {
+    plainString = `lỗi: ${error.message}`;
+  }
+  await table.deleteRecords([recordId]);
+  return { afterAdd, afterNull, plainString, afterDelete: await readBack() };
+});
+
+await step('addOption', async () => {
+  const table = await tableOf('bangiao');
+  const meta = await metaByName(table);
+  const field = await table.getFieldById(meta['Mảng'].id);
+  await field.addOption('PROBE-xoá');
+  const after = await metaByName(table);
+  return { added: after['Mảng'].property.options.find((option) => option.name === 'PROBE-xoá') ?? null };
+});
+
+await step('writeBaiLinkUrlUser', async () => {
+  const bai = await tableOf('bai');
+  const viec = await tableOf('viec');
+  const meta = await metaByName(bai);
+  const firstViec = (await viec.getRecordsByPage({ pageSize: 1 })).records[0];
+  const userId = await bitable.bridge.getUserId();
+  const attempts = {
+    object: { text: '', type: 'text', recordIds: [firstViec.recordId], tableId: viec.id },
+    idList: [firstViec.recordId],
+  };
+  const result = {};
+  for (const [label, linkValue] of Object.entries(attempts)) {
+    try {
+      const [recordId] = await bai.addRecords([{ fields: {
+        [meta['id'].id]: textCell(`probe-${label}`),
+        [meta['Việc'].id]: linkValue,
+        [meta['Link'].id]: [{ type: 'url', text: 'https://example.com', link: 'https://example.com' }],
+        [meta['Người đăng'].id]: [{ id: userId }],
+      } }]);
+      const back = (await bai.getRecordsByPage({ pageSize: 5, filter: idFilter(meta['id'].id, `probe-${label}`) })).records[0];
+      result[label] = { link: back?.fields[meta['Việc'].id], url: back?.fields[meta['Link'].id], user: back?.fields[meta['Người đăng'].id] };
+      await bai.deleteRecords([recordId]);
+    } catch (error) {
+      console.error('Probe link attempt failed', label, error);
+      result[label] = `lỗi: ${error.message}`;
+    }
+  }
+  return result;
+});
+
+report.finishedAt = new Date().toISOString();
+out.textContent = JSON.stringify(report, null, 2);
+await fetch('/__report', { method: 'POST', body: JSON.stringify(report) });
+</script>
+</body>
+</html>
